@@ -1,0 +1,100 @@
+<footer class="container-fluid bg-dark p-5">
+    <div class="row">
+        <!--Home ta is going here-->
+        <div class="col-sm-3">
+            <h6 class="text-secondary">Home</h6>
+            <hr>
+            <p>
+                <a href="/">Home</a>
+                <br><a href="projects.html">Projects</a>
+                <br><a href="contact.html">Contact Us</a>
+            </p>
+        </div>
+
+        <!--Project Section goes Here-->
+        <div class="col-sm-3">
+            <h6 class="text-secondary">Projects</h6>
+            <hr>
+
+            <h6 class="text-secondary">IoT</h6>
+            <p>
+                <a href="projects.html">Iot</a>
+                <br><a href="default.html">Python Facial Recognition</a>
+                <br><a href="default.html">Upcoming Python Project</a>
+            </p>
+
+            <h6 class="text-secondary">Smart sensing</h6>
+            <p>
+                <a href="default.html">project 1</a>
+                <br><a href="default.html">Node Project 2</a>
+                <br><a href="default.html">Project 3</a>
+            </p>
+
+        </div>
+
+        <!-- People Section goes Here-->
+        <div class="col-sm-3">
+            <h6 class="text-secondary">People</h6>
+            <hr>
+
+            <h6 class="text-secondary">Faculty</h6>
+            <p>
+                <a href="default.html">Ayon Chakraborty</a>
+                <br><a href="default.html">aaaa</a>
+                <br><a href="default.html">aaaa</a>
+            </p>
+
+            <h6 class="text-secondary">Assistant</h6>
+            <p>
+                <a href="default.html">abc</a>
+                <br><a href="default.html">abc</a>
+                <br><a href="default.html">abc</a>
+            </p>
+
+            <h6 class="text-secondary">Students</h6>
+            <p>
+                <a href="default.html">Students</a>
+            </p>
+        </div>
+
+        <!--Contacts goes here-->
+        <div class="col-sm-3" id="contactAnchor">
+            <h6 class="text-secondary">Contact Us</h6>
+            <hr>
+            <p>
+                <i class="fa fa-phone"></i>   +91-(044)-2257-4390 <br>
+                <i class="fas fa-envelope"></i> ayon@cse.iitm.ac.in<br>
+                <i class="fas fa-envelope"></i> ayon@iitm.ac.in<br>
+                © Ayon Chakraborty, 2020.<br>
+            </p>
+            <p>
+                <i class="fas fa-camera"></i> instagram 
+                <br><i class="fab fa-facebook-square"></i> facebook 
+                <br><i class="fab fa-twitter-square"></i> twitter 
+                <br><i class="fab fa-google-plus-square"></i> google+ 
+            </p>
+        </div>
+
+    </div>
+
+    <p class="text-center">IITM</p>
+</footer>
+
+<script>
+    $(function() {
+        // this is the page scrolling script
+        // see notes in the script.js file
+        $('.dropdown-item, .nav-item').on('click', function(e) {
+            if ( this.hash !== "" ) {
+                e.preventDefault();
+                var anchor = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(anchor).offset().top
+                }, 800, function() {
+                    window.location.hash = anchor;
+                });
+            }
+        });
+    });
+</script>
